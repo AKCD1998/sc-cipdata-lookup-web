@@ -101,6 +101,13 @@ label {
   width: min(1460px, calc(100vw - 48px));
   margin: 0 auto 0 24px;
   padding: 28px 0 64px;
+  display: grid;
+  gap: 28px;
+  align-content: start;
+}
+
+.app-shell > * {
+  width: 100%;
 }
 
 .page-content,
@@ -119,6 +126,7 @@ label {
 }
 
 .hero-card {
+  width: 100%;
   border-radius: 28px;
   padding: 28px;
   display: grid;
@@ -220,7 +228,12 @@ label {
 }
 
 .summary-grid {
+  display: grid;
   gap: 14px;
+}
+
+.kpi-grid {
+  grid-template-columns: repeat(3, minmax(220px, 1fr));
 }
 
 .summary-card,
@@ -239,7 +252,7 @@ label {
 
 .summary-card strong {
   display: block;
-  font-size: 30px;
+  font-size: 22px;
   color: #103041;
 }
 
@@ -426,6 +439,7 @@ label {
     width: auto;
     margin: 0;
     padding: 18px 14px 40px;
+    gap: 20px;
   }
 
   .panel,
